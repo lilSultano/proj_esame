@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <title>SuperEnalotto - Progetto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/theme/white.css" id="theme">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h1>🎯 Progetto SuperEnalotto</h1>
+          <p>Analisi statistica e modelli predittivi</p>
+        </section>
+
+        <section>
+          <h2>Domande chiave</h2>
+          <ul>
+            <li>Ci sono numeri più frequenti?</li>
+            <li>Posso usare un modello per prevedere qualcosa?</li>
+            <li>Il sistema è davvero casuale?</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Dataset</h2>
+          <p>SuperEnalotto 1997–2024</p>
+          <p>Numeri principali, Jolly, SuperStar, data</p>
+        </section>
+
+        <section>
+          <h2>Visualizzazioni</h2>
+          <img src="frequenza.png" alt="frequenze" style="width:80%">
+        </section>
+
+        <section>
+          <h2>Test statistici</h2>
+          <pre><code>Chi²: p = 0.3251  
+KS:   p = 0.8719</code></pre>
+          <p>→ distribuzione compatibile con casualità</p>
+        </section>
+
+        <section>
+          <h2>Modello KNN</h2>
+          <p>Input: N1–N6 → Output: Jolly</p>
+          <p>Accuracy ≈ 1% → uguale al caso</p>
+        </section>
+
+        <section>
+          <h2>Conclusione</h2>
+          <p>📌 Non ci sono pattern prevedibili</p>
+          <p>✅ Il sistema è ben progettato</p>
+          <p>🧠 L’illusione del controllo è reale, ma i dati dicono altro</p>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/reveal.js@4.0.2/dist/reveal.js"></script>
+    <script>
+      Reveal.initialize();
+    </script>
+  </body>
+</html>
